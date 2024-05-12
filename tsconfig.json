@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kapelew.github.io/TodoApp/",
   "compilerOptions": {
     "target": "es2016",
     "jsx": "react-jsx",
@@ -6,8 +7,11 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true,
-    "homepage": "https://kapelew.github.io/TodoApp/"
+    "skipLibCheck": true
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "include": ["src/**/*"]
 }
